@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+{% block content %}
+    <div class="header-content">
+        <h1>Anime Recommendation System</h1>
+        <form action="/index" method="post">
+            <select class="form-select" id="title" name="title" aria-label="Defalut select example">
+                {% for i in anime_list %}
+                    <option value="{{i}}">{{i}}</option>
+                {% endfor %}
+            </select>
+            <button type="submit"><ion-icon name="search-sharp"/></button>
+        </form>
+    </div>
+{% endblock %}

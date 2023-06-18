@@ -1,0 +1,108 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* body{
+    background: #000;
+    color: #fff;
+} */
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/BG.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    position: relative;
+}
+
+nav h1{
+    text-align: left;
+    margin: 10px 10px;
+    font-family: 'Bruno Ace SC', cursive;
+    margin: 20px 20px;
+    position: relative;
+     color: #e6e6fa;
+
+    @media screen and (min-width: 1000px) {
+        -webkit-text-stroke-width: 1.5px;
+        -webkit-text-stroke-color: #4b0082;
+    }
+}
+
+nav{
+    display: flex;
+}
+
+div section{
+    color: #e6e6fa;
+    display: inline-block;
+    margin-top: 200px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    backdrop-filter: blur(50px);
+    top: 35%;
+    left: 50%;
+    text-align: center;
+}
+
+div section h4{
+    margin: 10px;
+}
+
+.header-content{
+    display: flexbox;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: 10px;
+}
+
+.header-content h1{
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: 600;
+    max-width: 650px;
+    color: #e6e6fa;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #4b0082;
+}
+
+.form-select{
+    height: 45px;
+    margin: 20px 0 5px 0;
+    border-radius: 15px;
+}
+
+form button{
+    border: 0;
+    outline: 0;
+    background: #ef67c6;
+    color: #e6e6fa;
+    font-size: 16px;
+    margin-left: 5px;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+footer{
+    background-color: #e6e6fa;
+    padding: 30px;
+    text-align: center;
+}
+
+footer a{
+    color: #4b0082;
+    font-size: 1.75rem;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Dancing Script', cursive;
+}

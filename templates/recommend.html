@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="header-content">
+    <section>
+        {% if status == True %}
+        {% for index,row in rec_anime.iterrows() %}
+        <h4>
+            {{ row['Title'] }}
+            <br>
+        </h4>
+        {% endfor %}
+        {% endif %}
+    </section>
+</div>
+{% endblock %}
